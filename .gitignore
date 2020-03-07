@@ -2,6 +2,11 @@
 
 # my Reference
 /*.rtf
+/public/logo192.png
+/public/logo512.png
+/src/App.test.js
+/src/logo.svg
+/src/serviceWorker.js
 
 # dependencies
 /node_modules
