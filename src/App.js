@@ -30,8 +30,19 @@ class App extends Component {
     }
     return(
       <div className="App">
-        <Subject title={this.state.subject.title} sub={this.state.subject.sub}></Subject>
-        {/* <Subject title="React" sub="For UI"></Subject> */}
+        {/* <Subject title={this.state.subject.title} sub={this.state.subject.sub}></Subject> */}
+        <header>
+          <h1><a href='/' onClick={function(e){
+            e.preventDefault();
+            /* console.log(e);
+            debugger; */
+            // this.state.mode='welcome';
+            this.setState({
+              mode: 'welcome'
+            });
+          }.bind(this)}>{this.state.subject.title}</a></h1>
+          {this.state.subject.sub}
+        </header>
         <TOC data={this.state.contents}></TOC>
         <Content title={_title} desc={_desc}></Content>
       </div>
